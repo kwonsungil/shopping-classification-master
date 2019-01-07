@@ -96,7 +96,7 @@ def make_train_dataset():
             if len(item) < 1:
                 continue
             # real_idx = idx_file*1000000 + idx
-            if total_idx % 10000 == 0:
+            if total_idx % 100000 == 0:
                 print(total_idx)
 
             x_total = np.zeros(product_words_lenth, dtype=np.uint32)
