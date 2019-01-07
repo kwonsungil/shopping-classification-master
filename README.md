@@ -28,7 +28,7 @@ global_constants 3번째 줄에 base_dir을 실행하려는 root directory명과
 
 2. 예측만 할 경우
 #######################################################################################
- 1)ckpt 파일 다운로드 link
+ 1)ckpt 파일 다운로드 link : https://drive.google.com/file/d/14v8fB5BTbLdFfO6B6Elmy1gZy2XtntFy/view
  => 다운로드 후 logs 디렉터리 밑으로 파일을 옮겨주세요
  2) inference 파일 실행 (44번째 줄과 45번째 line에서 dev, test 선택해서 예측)
 #######################################################################################
