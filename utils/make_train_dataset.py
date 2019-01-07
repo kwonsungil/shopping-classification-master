@@ -143,7 +143,7 @@ def make_val_dataset():
         if len(key) == 0:
             continue
         change_map[key] = key_idx
-    os.makedirs(gc.classification_training_dataset_dir, exist_ok=True)
+    os.makedirs(gc.classification_dev_dataset_dir, exist_ok=True)
 
     total_idx = 0
     for idx_file, file in enumerate(files):
