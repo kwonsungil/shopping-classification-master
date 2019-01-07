@@ -8,7 +8,7 @@ import math, random
 from model.model_v9_1 import kakao
 
 if __name__ == '__main__':
-    if len(os.listdir(gc.classification_training_dataset_dir)) == 0:
+    if not os.path.exists(gc.classification_training_dataset_dir) or len(os.listdir(gc.classification_training_dataset_dir)) == 0:
         print('start split!')
         split()
         print('start process_dataset!')
