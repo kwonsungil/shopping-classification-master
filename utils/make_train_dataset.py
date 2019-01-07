@@ -1,15 +1,7 @@
 import os
 import global_constants as gc
-import datetime
-import re
 import numpy as np
 import json
-
-files = os.listdir(gc.escaped_dataset)
-product_words_lenth = 40
-map_cate = json.load(open(gc.map_cate_file, 'r', encoding='utf-8'))
-y_lenth = len(map_cate)
-key_map_file = gc.vocap_char_file
 
 def make_vocap():
     product_num_map = {}
@@ -18,6 +10,8 @@ def make_vocap():
     brands = []
     makers = []
     key_map = {}
+    files = os.listdir(gc.escaped_dataset)
+    key_map_file = gc.vocap_char_file
     for file in files:
         if file.find('train') == -1:
             continue
@@ -75,6 +69,10 @@ def make_vocap():
 
 
 def make_train_dataset():
+    files = os.listdir(gc.escaped_dataset)
+    product_words_lenth = 40
+    map_cate = json.load(open(gc.map_cate_file, 'r', encoding='utf-8'))
+    key_map_file = gc.vocap_char_file
     key_map = open(key_map_file, 'r', encoding='utf-8').read().split('\n')
     change_map = {}
     for key_idx, key in enumerate(key_map):
@@ -135,6 +133,10 @@ def make_train_dataset():
         np.save(os.path.join(gc.classification_training_dataset_dir, 'embedding_y_' + out_file_name), y)
 
 def make_val_dataset():
+    files = os.listdir(gc.escaped_dataset)
+    product_words_lenth = 40
+    map_cate = json.load(open(gc.map_cate_file, 'r', encoding='utf-8'))
+    key_map_file = gc.vocap_char_file
     key_map = open(key_map_file, 'r', encoding='utf-8').read().split('\n')
     change_map = {}
     for key_idx, key in enumerate(key_map):
