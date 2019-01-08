@@ -13,7 +13,8 @@ def split():
     chunk_files = os.listdir(gc.raw_dataset)
 
     for chunk_file in chunk_files:
-
+        if chunk_file.find('chunk') == -1:
+            continue
         print(chunk_file)
         datas = h5py.File(os.path.join(data_dir, chunk_file), 'r')
         output_file = os.path.join(output_dir, chunk_file.replace('chunk.', '') + '.txt')
