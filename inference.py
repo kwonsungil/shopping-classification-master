@@ -41,8 +41,8 @@ if __name__ == '__main__':
     print(total_world)
     kakao = kakao(total_world, False)
 
-    files = ['test01', 'test02']
-    # files = ['dev01']
+    files = ['test.01', 'test.02']
+    # files = ['dev.01']
     for file in files:
         print(file)
         output_file = file + '_result.txt'
