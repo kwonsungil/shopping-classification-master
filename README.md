@@ -9,10 +9,9 @@
 
 <h4>1. 학습 할 경우</h4>
 <h5>[1] 학습 방법</h5>       
-<pre>
-1) logs 디렉터리 삭제  
-2) data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후  
-3) train.py 실행
+<pre> 
+1) data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후  
+2) train.py 실행
 </pre>  
           
 <h5>[2] 학습 과정</h5>  
@@ -27,8 +26,8 @@
 
 <h4>2. 예측만 할 경우</h4>
 <pre>
-1) ckpt 파일 다운로드 link : https://drive.google.com/file/d/14v8fB5BTbLdFfO6B6Elmy1gZy2XtntFy/view  
-           => 다운로드 후 logs 디렉터리 밑으로 파일을 옮겨주세요  
+1) ckpt 파일 다운로드 link : https://drive.google.com/file/d/1VoYVs_ZCIB9SHC9Q1o348H4QrO5SizRI/view?usp=drivesdk  
+           => 다운로드 후 logs 디렉터리를 만든 후 그 으로 파일을 옮겨주세요  
 2) inference 파일 실행 (44번째 줄과 45번째 line에서 dev, test 선택해서 예측)  
 </pre>
 
