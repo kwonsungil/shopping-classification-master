@@ -5,16 +5,15 @@
 
 
 <h3>global_constants 3번째 줄에 base_dir을 실행하려는 root directory명과 맞춰야 함</h3>
-============================================================================
 
 
 <h4>1. 학습 할 경우</h4>
 <h5>[1] 학습 방법</h5>       
-          1. logs 디렉터리 삭제  
+<tab>1. logs 디렉터리 삭제  
           2. data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후  
           3. train.py 실행  
           
-#####[2] 학습 과정  
+<h5>2] 학습 과정</h5>  
   1) split() : 
           1. h5py 파일에서 product,model,brand,maker,pid,price,label을 가져와서 txt와 numpy로 저장  
           2. process_dataset() : 상품명에 대한 전처리 과정  
