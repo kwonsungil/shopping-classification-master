@@ -9,7 +9,7 @@
 
 <h4>1. 학습 할 경우</h4>
 <h5>[1] 학습 방법</h5>       
-<pre> 
+<pre>
 1) data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후  
 2) train.py 실행
 </pre>  
