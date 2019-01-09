@@ -9,7 +9,7 @@
 
 <h4>1. 학습 할 경우</h4>
 <h5>[1] 학습 방법</h5>       
-<tab>1. logs 디렉터리 삭제  
+<pre>1. logs 디렉터리 삭제</pre>  
           2. data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후  
           3. train.py 실행  
           
