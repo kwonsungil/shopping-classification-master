@@ -9,9 +9,9 @@ global_constants 3번째 줄에 base_dir을 실행하려는 root directory명과
 #######################################################################################
 
 
-1. 학습 할 경우
- [1] 학습 방법         
-          1) logs 디렉터리 삭제 
+1. 학습 할 경우  
+ [1] 학습 방법           
+          1) logs 디렉터리 삭제  
           2) data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후
           3) train.py 실행
           
