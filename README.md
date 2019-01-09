@@ -10,16 +10,18 @@ global_constants 3번째 줄에 base_dir을 실행하려는 root directory명과
 
 
 1. 학습 할 경우
-           *학습 방법 : 1) logs 디렉터리 삭제 
-                      2) data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후
-                      3) train.py 실행
-           *학습 과정
-                      1) split() : h5py 파일에서 product,model,brand,maker,pid,price,label을 가져와서 txt와 numpy로 저장
-                      2) process_dataset() : 상품명에 대한 전처리 과정
-                      3) make_vocap() : character에 대한 사전을 만드는 과정(생략가능)
-                      4) make_train_dataset() : 상품명 + 모델명을 띄어쓰기를 제거하고 캐릭터 단위로 분해해서 training set을 만듦
+ [1] 학습 방법         
+          1) logs 디렉터리 삭제 
+          2) data 디렉터리 하위에 있는 original 디렉터리에 train,val,test chunk file들을 옮긴후
+          3) train.py 실행
+          
+ [2] 학습 과정
+          1) split() : h5py 파일에서 product,model,brand,maker,pid,price,label을 가져와서 txt와 numpy로 저장
+          2) process_dataset() : 상품명에 대한 전처리 과정
+          3) make_vocap() : character에 대한 사전을 만드는 과정(생략가능)
+          4) make_train_dataset() : 상품명 + 모델명을 띄어쓰기를 제거하고 캐릭터 단위로 분해해서 training set을 만듦
                             각각 상품명에 맞는 big category, middle category, small category, detail category와 전체 category 정답 셋을 만듦
-                      5) 위에서 나온 data들을 shuffle 하여 model 학습
+          5) 위에서 나온 data들을 shuffle 하여 model 학습
   
 
 
