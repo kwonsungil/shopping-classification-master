@@ -15,7 +15,7 @@
 3) train.py 실행
 </pre>  
           
-<h5>2] 학습 과정</h5>  
+<h5>[2] 학습 과정</h5>  
 <pre>
 1) split() :  h5py 파일에서 product,model,brand,maker,pid,price,label을 가져와서 txt와 numpy로 저장  
 2) process_dataset() : 상품명에 대한 전처리 과정  
