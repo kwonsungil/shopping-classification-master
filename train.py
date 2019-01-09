@@ -20,7 +20,7 @@ if __name__ == '__main__':
         print('start make_val_dataset!')
         make_val_dataset()
     batch_size = 4000
-    files = ['train01', 'train02', 'train03', 'train04', 'train05', 'train06', 'train07', 'train08', 'train09']
+    files = ['train.01', 'trai.n02', 'train.03', 'train.04', 'train.05', 'train.06', 'train.07', 'train.08', 'train.09']
     x_y_dir = gc.classification_training_dataset_dir
     key_map = open(gc.vocap_char_file, 'r', encoding='utf-8').read().split('\n')
     total_world = len(key_map)
