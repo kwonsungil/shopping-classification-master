@@ -22,8 +22,7 @@ global_constants 3번째 줄에 base_dir을 실행하려는 root directory명과
                             각각 상품명에 맞는 big category, middle category, small category, detail category와 전체 category 정답 셋을 만듦
   5) 위에서 나온 data들을 shuffle 하여 model 학습
   
-  
-  * split() 과정이 오래 걸리므로, chunk file을 지정해서 여러개 process 돌리는 것을 
+
 
 
 2. 예측만 할 경우
