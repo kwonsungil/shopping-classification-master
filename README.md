@@ -26,7 +26,7 @@
 
 <h4>2. 예측만 할 경우</h4>
 <pre>
-1) ckpt 파일 다운로드 link : https://drive.google.com/file/d/1VoYVs_ZCIB9SHC9Q1o348H4QrO5SizRI/view?usp=drivesdk  
+1) ckpt 파일 다운로드 link : https://drive.google.com/file/d/1lzOxYtTuLiBOWFAlc8hJn6zo-3lp2PL6/view?usp=drivesdk  
            => 다운로드 후 logs 디렉터리를 만든 후 그 으로 파일을 옮겨주세요  
 2) inference 파일 실행 (44번째 줄과 45번째 line에서 dev, test 선택해서 예측)  
 </pre>
