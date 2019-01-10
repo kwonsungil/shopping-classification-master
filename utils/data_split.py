@@ -29,7 +29,7 @@ def split():
             for idx in range(size):
                 if idx % 1000 == 0 and idx != 0:
                     print(idx)
-                    break
+                    
                 temp = []
                 temp.append(datas['product'][idx].decode('utf-8').replace('\t', '').strip())
                 temp.append(datas['model'][idx].decode('utf-8').replace('\t', '').strip())
